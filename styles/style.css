@@ -42,11 +42,12 @@ header ul li a{
     color: var(--morado-oscuro);
 }
 main{
-    padding: 2em;
     background-image: url('/images/lineas.jpg');
     background-size: 100%;
     background-position: right;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 a{
     cursor: pointer;
@@ -56,7 +57,14 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    height: 100%;
+    width: 55%;
+    background-color: #ffffff4b;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px 10px #ffffff4b;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #ffffffbe;
+    margin: 2em;
 }
 h1{
     font-size: 3em;
@@ -67,8 +75,6 @@ h2{
 }
 .portada > h1,.portada >h2{
     padding: 0.3em 0;
-    background-color: #fff;
-    box-shadow: 0 0 20px 15px #fff;
     width: auto;
 }
 .boton-1{
@@ -82,4 +88,37 @@ h2{
 }
 .boton-1:hover{
     background-color: var(--rosa);
+}
+
+aside{
+    background-color: #fff;
+    height: 100%;
+    nav > ul {
+        list-style: none;
+        padding: 2em;
+        li{
+            padding: 1em 0;
+            a{
+                text-decoration: none;
+                color: var(--morado-oscuro);
+            }
+            a:hover{
+                color: var(--morado);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.contenido{
+    padding: 1em;
+}
+.contenido > section{
+    background-color: #fff;
+    padding: 1em;
+}
+.contenido > section > h2{
+    margin-bottom: 1em;
+}
+.contenido > section > p{
+    padding: 0 3em;
 }
