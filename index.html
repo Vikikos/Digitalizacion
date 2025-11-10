@@ -7,20 +7,235 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Contenido</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main__portada">
-        <section class="portada">
-            <h1>Transformación Digital Industrial</h1>
-            <h2>Conectando IT y OT para la industria del futuro</h2>
-            <a href="contenido.html" class="boton-1">Ver Contenido</a>
-        </section>
+    <main class="main__contenido">
+        <aside>
+            <div class="div__boton-indice"></div>
+            <nav class="nav__indice">
+                <ul>
+                    <li><a href="#s1">¿Qué es la digitalización?</a></li>
+                    <li><a href="#s2">IT vs OT: Los dos pilares</a></li>
+                    <li><a href="#s3">Tecnologías clave</a></li>
+                    <li><a href="#s4">Ventajas de la digitalización end-to-end.</a></li>
+                    <li><a href="#s5">Impacto en la organización.</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="contenido">
+            <section class="portada">
+                <h1>Transformación Digital Industrial</h1>
+                <h2>Conectando IT y OT para la industria del futuro</h2>
+                <a href="#s1" class="boton-1">Ver Contenido</a>
+            </section>
+            <section id="s1" class="section__contenido">
+                <h2>¿Qué es la digitalización?</h2>
+                <p>
+                    La digitalización es el proceso mediante el cual la información, los servicios y 
+                    las actividades que antes se realizaban de forma analógica o manual se transforman 
+                    en formatos y sistemas digitales. Este cambio permite agilizar tareas, mejorar la 
+                    eficiencia y facilitar el acceso a los datos desde cualquier lugar. Gracias a la 
+                    digitalización, las empresas, instituciones y personas pueden adaptarse mejor a 
+                    un entorno tecnológico en constante evolución, optimizando recursos y promoviendo 
+                    la innovación en todos los ámbitos de la sociedad.
+                </p>
+            </section>
+            <section id="s2" class="section__contenido">
+                <h2>IT vs OT</h2>
+                <table class="table__ItvsOT">
+                    <tr>
+                        <th></th>
+                        <th>IT</th>
+                        <th>OT</th>
+                    </tr>
+                    <tr>
+                        <td>Enfoque</td>
+                        <td>
+                            Enfocadas en datos, infraestructura de red y seguridad.
+                        </td>
+                        <td>
+                            Control y monitoreo de equipos físicos, procesos industriales y maquinaria.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Objetivo</td>
+                        <td>
+                            Garantizar la disponibilidad, seguridad y precisión de la información.
+                        </td>
+                        <td>
+                            Asegurar la continuidad, eficiencia y seguridad de las operaciones físicas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entorno de trabajo</td>
+                        <td>
+                            Oficinas, centros de datos, entornos empresariales digitales.
+                        </td>
+                        <td>
+                            Plantas industriales, fábricas, sistemas de automatización y control.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologias habituales</td>
+                        <td>
+                            Servidores, redes, software empresarial, bases de datos, nube.
+                        </td>
+                        <td>
+                            PLCs, SCADA, sensores, actuadores, controladores industriales.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Profesuionales</td>
+                        <td>
+                            Ingenieros informáticos, administradores de sistemas, analistas de datos.
+                        </td>
+                        <td>
+                            Ingenieros industriales, eléctricos, de automatización o control.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Riesgos</td>
+                        <td>
+                            Ciberataques, pérdida de datos, brechas de seguridad.
+                        </td>
+                        <td>
+                            Fallas de maquinaria, interrupciones de procesos, daños físicos.
+                        </td>
+                    </tr>
+                </table>
+
+            </section>
+            <section id="s3" class="section__contenido section3">
+                <h2>Tecnologías clave</h2>
+                <article>
+                    <h3>Conectividad y Procesamiento</h3>
+                    <div>
+                        <img src="/images/conectividad.png" alt="coidad conectada">
+                        <ul>
+                            <li>
+                                <span>Cloud Computing (Computación en la nube): </span>
+                                Permite almacenar, gestionar y procesar datos a través de internet, 
+                                facilitando el acceso remoto y la escalabilidad de los recursos tecnológicos.
+                            </li>
+                            <li>
+                                <span>Blockchain: </span>
+                                Ofrece un sistema descentralizado y seguro para registrar transacciones o datos, 
+                                garantizando la transparencia y la trazabilidad en procesos digitales.
+                            </li>
+                            <li>
+                                <span>Sensores: </span>
+                                Capturan información en tiempo real desde el entorno físico, 
+                                esencial para la automatización industrial y los sistemas inteligentes.
+                            </li>
+                            <li>
+                                <span>Internet y 5G: </span>
+                                Proporcionan la conectividad necesaria para la comunicación instantánea entre dispositivos, 
+                                habilitando el Internet de las Cosas (IoT) con una velocidad y capacidad sin precedentes.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="section__contenido section3">
+                <h2>Tecnologías clave</h2>
+                <article>
+                    <div>
+                        <div>
+                           <h3>Inteligencia y Análisis</h3>
+                            <ul>
+                                <li>
+                                    <span>Inteligencia Artificial (IA): </span>
+                                    Simula la capacidad humana de razonar, aprender y resolver problemas, 
+                                    automatizando procesos complejos y mejorando la eficiencia.
+                                </li>
+                                <li>
+                                    <span>Machine Learning (ML): </span>                              
+                                    Rama de la IA que permite a los sistemas aprender de los datos 
+                                    y mejorar su desempeño sin intervención humana directa.
+                                    
+                                </li>
+                                <li>
+                                    <span>Análisis Avanzado: </span>
+                                    Combina técnicas estadísticas, predictivas y de big data para 
+                                    detectar patrones, anticipar comportamientos y optimizar operaciones empresariales.
+                                </li>
+                            </ul> 
+                        </div>
+                        
+                        <img src="/images/ia.png" alt="coidad conectada">
+                    </div>
+                </article>
+            </section>
+            <section class="section__contenido section3">
+                <h2>Tecnologías clave</h2>
+                <article>
+                    <h3>Interacción Hombre-Máquina</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>Realidad Aumentada (AR): </span>
+                                Superpone información digital sobre el entorno físico, mejorando 
+                                la formación, el mantenimiento y la toma de decisiones en tiempo real.
+                            </li>
+                            <li>
+                                <span>Robótica y Automatización: </span>
+                                Integran máquinas inteligentes capaces de ejecutar 
+                                tareas repetitivas o peligrosas con precisión y seguridad.
+                            </li>
+                            <li>
+                                <span>Vehículos Autónomos: </span>
+                                Combinan sensores, IA y conectividad para desplazarse 
+                                sin intervención humana, revolucionando el transporte y la logística.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="section__contenido section3">
+                <h2>Tecnologías clave</h2>
+                <article>
+                    <h3>Ingeniería Avanzada</h3>
+                    <div>
+                        <img src="/images/Nanoparticula.jpg" alt="coidad conectada">
+                        <ul>
+                            <li>
+                                <span>Impresión 3D y 4D: </span>
+                                Permiten fabricar objetos a medida capa por capa, e incluso materiales 
+                                que cambian de forma o función con el tiempo (4D).
+                            </li>
+                            <li>
+                                <span>Nanopartículas: </span>
+                                Posibilitan el desarrollo de nuevos materiales con propiedades avanzadas 
+                                para la medicina, la energía o la electrónica.
+                            </li>
+                            <li>
+                                <span>Energías Renovables: </span>
+                                Su integración digital optimiza la generación, el almacenamiento y el consumo 
+                                energético, contribuyendo a un modelo más sostenible.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="s4" class="section__contenido">
+                <h2>Ventajas de la digitalización end-to-end.</h2>
+                <p>
+                    El End to End (E2E) en TI se refiere a la implementación de un servicio de software que abarca todos los aspectos de una operación empresarial, desde su inicio hasta su conclusión.
+                    En otras palabras, se trata de una solución integral que conecta y automatiza todos los procesos de la empresa, permitiendo una gestión completa y optimizada.
+                </p>
+            </section>
+            <section id="s5" class="section__contenido">
+                <h2>Impacto en la organización.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Fuga eum itaque ut eligendi velit quod provident recusandae tenetur mollitia. 
+                    Sit nemo sint temporibus iusto saepe ea laudantium quo veniam aliquid!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eos incidunt 
+                    saepe qui aperiam magnam voluptatum error dignissimos possimus quia dolore 
+                    quidem vel eaque animi tempore quisquam, repellendus quae explicabo!
+                </p>
+            </section>
+        </div>
+        
     </main>
     <footer>
         2025 &copy; Viktoria Kosarova

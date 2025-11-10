@@ -1,7 +1,7 @@
 :root{
     --sombra: #4506934f;
-    --morado-oscuro: #450693;
-    --morado: #8C00FF;
+    --morado-oscuro: #471388;
+    --morado: #7b14cf;
     --rosa: #FF3F7F;
 }
 *{
@@ -23,13 +23,15 @@ footer{
     bottom: 0;
     text-align: center;
     color: var(--morado-oscuro);
-    z-index: 50;
+    z-index: 100;
 }
 main{
     /*background-color: var(--sombra);*/
-    background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 0% 0% / 26px 26px, radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 13px 13px / 26px 26px, linear-gradient(#8c00ff 1.5px, transparent 1.5px) 0px -0.75px / 13px 13px, linear-gradient(90deg, #8c00ff 1.5px, #ffffff 1.5px) -0.75px 0px / 13px 13px #ffffff;
+    /*background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 0% 0% / 26px 26px, radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 13px 13px / 26px 26px, linear-gradient(#8c00ff 1.5px, transparent 1.5px) 0px -0.75px / 13px 13px, linear-gradient(90deg, #8c00ff 1.5px, #ffffff 1.5px) -0.75px 0px / 13px 13px #ffffff;
     background-size: 26px 26px, 26px 26px, 13px 13px, 13px 13px;
-    background-color: #ffffff;
+    background-color: #ffffff;*/
+    background: #450693;
+background: linear-gradient(0deg,rgba(69, 6, 147, 1) 0%, rgba(140, 0, 255, 1) 16%, rgba(255, 255, 255, 1) 100%);
 
 }
 a{
@@ -43,6 +45,10 @@ h1{
 h2{
     color: var(--morado);
     padding: 0.3em 0;
+}
+h3{
+    margin: 1em 0;
+    color: var(--rosa);
 }
 .boton-1{
     margin: 1em 0;
@@ -60,6 +66,7 @@ h2{
 aside{
     position: fixed;
     background-color: #fff;
+    z-index: 50;
     height: 100%;
     box-shadow: 0 0 10px var(--sombra);
     nav > ul {
@@ -79,14 +86,19 @@ aside{
         }
     }
 }
+p{
+    text-indent: 50px;
+    text-align: justify;
+}
 .contenido{
     padding: 1em;
     margin-left: 350px;
 }
 .section__contenido{
     background-color: #fff;
-    padding: 1em;
+    padding: 2em;
     margin: 1em 0;
+    height: 86vh;
 }
 .portada{
     background-color: #fff;
@@ -104,21 +116,75 @@ aside{
     margin-bottom: 1em;
 }
 .contenido > section > p{
-    padding: 0 3em;
+    padding: 1em;
 }
 
 .div__boton-indice{
     display: none;
 }
-@media (width<600px){
+.table__ItvsOT{
+    margin: 1.5em 0;
+    td,th{
+        padding: 1em;
+    }
+    th{
+        background-color: var(--morado-oscuro);
+        color: #fff;
+    }
+    tr > td{
+        border-bottom: 1px solid;
+        outline: var(--morado) solid 1px;
+    }
+    tr > td:nth-child(1){
+        background-color: var(--morado);
+        color: #fff;
+        outline: none;
+    }
+    
+}
+
+.section3{
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    article > div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            width: 30vw;
+           max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            
+            filter: drop-shadow(3px 3px 5px #00000059);
+        }
+        ul{
+            margin: auto 0;
+            padding-left: 2em;
+            li{
+                padding: 0.5em;
+                text-align: justify;
+                span{
+                    color: var(--morado-oscuro);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media (width<950px){
     aside{
         height: auto;
+        width: 100%;
     }
     .div__boton-indice{
         display: block;
         padding: 1em;
         background-image: url('/images/icon-menu.png');
         background-repeat: no-repeat;
+        background-position: center;
         width: 30px;
         height: 30px;
     }
@@ -126,7 +192,6 @@ aside{
         display: none;
     }
     aside:hover{
-        height: 100%;
         .nav__indice{
             display: block;
         }
@@ -135,4 +200,18 @@ aside{
         padding: 1em;
         margin-left: 0;
     }
+    .section__contenido{
+        padding: 1em;
+    }
+    .section3{
+        article > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        } 
+    }
+    
 }
