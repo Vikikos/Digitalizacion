@@ -42,14 +42,6 @@ h1{
     color: var(--morado-oscuro);
     padding: 0.3em 0;
 }
-h2{
-    color: var(--morado);
-    padding: 0.3em 0;
-}
-h3{
-    margin: 1em 0;
-    color: var(--rosa);
-}
 .boton-1{
     margin: 1em 0;
     padding: 1em;
@@ -62,7 +54,9 @@ h3{
 .boton-1:hover{
     background-color: var(--rosa);
 }
-
+.div__boton-indice{
+    display: none;
+}
 aside{
     position: fixed;
     background-color: #fff;
@@ -90,7 +84,7 @@ p{
     text-indent: 50px;
     text-align: justify;
 }
-.contenido{
+.div__contenido{
     padding: 1em;
     margin-left: 350px;
 }
@@ -99,8 +93,22 @@ p{
     padding: 2em;
     margin: 1em 0;
     height: 86vh;
+    border-radius: 10px;
+    h2{
+        color: var(--morado);
+        padding: 0.3em 0;
+        margin-bottom: 1em;
+        border-bottom: 1px solid var(--morado);
+    }
+    h3{
+        margin: 1em 0;
+        color: var(--rosa);
+    }
+    p{
+        padding: 1em;
+    }
 }
-.portada{
+.section__portada{
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -109,25 +117,19 @@ p{
     padding: 1em;
     border-radius: 10px;
     border: 1px solid #ffffffbe;
-    margin-top: 0;
-    height: 100vh;
+    height: 86vh;
 }
-.contenido > section > h2{
-    margin-bottom: 1em;
+.section__ItvsOt{
+    display: flex;
+    flex-direction: column;
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.contenido > section > p{
-    padding: 1em;
-}
-
-.div__boton-indice{
-    display: none;
-}
-#p_s1{
-
-    
-}
-.table__ItvsOT{
-    margin: 1.5em 0;
+.section__ItvsOt .table__ItvsOT{
     td,th{
         padding: 1em;
     }
@@ -147,7 +149,7 @@ p{
     
 }
 
-.section3{
+.section__tec-clave{
     article{
         display: flex;
         flex-direction: column;
@@ -178,11 +180,25 @@ p{
         }
     }
 }
-#s5{
+.section__end-to-end{
+    ul{
+        list-style-image: url('/images/icono-ul.png');
+        padding: 1em;
+        padding-left: 3em;
+        li{
+            padding: 0.5em 0;
+            strong{
+                color: var(--morado-oscuro);
+            }
+        }
+    }
+}
+.section__impacto{
     div{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         img{
             width: 30vw;
             margin-left: 1em;
@@ -193,6 +209,13 @@ p{
     aside{
         height: auto;
         width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    aside:hover{
+        .nav__indice{
+            display: block;
+        }
     }
     .div__boton-indice{
         display: block;
@@ -206,19 +229,18 @@ p{
     .nav__indice{
         display: none;
     }
-    aside:hover{
-        .nav__indice{
-            display: block;
-        }
-    }
-    .contenido{
+    .div__contenido{
         padding: 1em;
         margin-left: 0;
     }
     .section__contenido{
         padding: 1em;
+        img{
+           
+            box-sizing: border-box;
+        }
     }
-    .section3{
+    .section__tec-clave{
         article > div{
             display: flex;
             flex-direction: column;
